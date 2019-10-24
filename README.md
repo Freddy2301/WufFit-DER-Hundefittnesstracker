@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="Wufit_logo.png" width="350"/>
+</p>
+
+
 # IoT DHBW Winter Term 2019
 This is the parent repository of the IoT lecture at DHBW Stuttgart in the winter term 2019.
 
