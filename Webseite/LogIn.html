@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+          
+          body{
+              background-color: #f0f6ed;
+          }
+          
+    .row.content {height: 1500px}
+          
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f7f2ee;
+      height: 100%;
+    }
+    
+    .content{
+            background-color: #f0f6ed;  
+    }
+          
+          .test{
+      background-color: #7ec654;
+      height: auto;
+    }
+          .test3{
+      background-color: #f2cca4;
+      height: auto;
+    }
+    
+          .test2{
+              background-color: rgb(201,161,123);
+              height: 100%;
+          }
+          
+    .navClas{
+        background-color: #f0f6ed;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #f0f6ed;
+      color: #f0f6ed;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default" role="navigation" style="border-width: 0 0 1px; border-radius: 0; -webkit-border-radius:0;">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/" style="padding-top:0; padding-bottom:0;">
+            <img alt="Logo" style="margin-top:13px; height: 24px;" src="https://files.onlosant.com/5dc2cfd5086b0b00078beb9f/pictures/Wufit_logo.png">
+          </a>
+        </div>
+        
+      </div>
+    </nav>
+    
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+      <div style="max-width: 300px; margin: 0 auto 20px; text-align: center;">
+        <img class="img-responsive" src="https://files.onlosant.com/5dc2cfd5086b0b00078beb9f/pictures/Wufit_logo.png" alt="Big Logo">
+      </div>
+      
+
+
+      <div class = "well" style="background-color: rgb(201, 161, 123);" >
+        <p>
+          Das ist die Loginseite von WufFit DER Fitnesstracker für Hunde
+        </p>
+        <p>
+          Um auf die Hauptseite zu kommen melden Sie sich bitte an
+        </p>
+      <form method="post">
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input autofocus required value="{{pageData.email}}" type="email" class="form-control" name="email" id="email" placeholder="e.g. test.user@example.com">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input required minlength="8" maxlength="255" type="password" class="form-control" id="password" name="password">
+        </div>
+        <button type="submit" class="btn btn-success">Sign In</button>
+      </form>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
